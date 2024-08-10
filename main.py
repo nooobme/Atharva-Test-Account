@@ -20,7 +20,7 @@ from forms import CreatePostForm, RegisterForm, LoginForm, CommentForm
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.environ.get("flask_key")
-os.environ.get("DB_URI", "sqlite:///posts.db")
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("DB_URI", "sqlite:///posts.db")
 ckeditor = CKEditor(app)
 Bootstrap5(app)
 
