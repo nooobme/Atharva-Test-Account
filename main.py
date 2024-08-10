@@ -1,7 +1,7 @@
 import os
-from dotenv import load_dotenv
-
-load_dotenv(".env")
+# from dotenv import load_dotenv
+#
+# load_dotenv(".env")
 from datetime import date
 from flask import Flask, abort, render_template, redirect, url_for, flash, request
 from flask_bootstrap import Bootstrap5
